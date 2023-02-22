@@ -1,0 +1,140 @@
+<!-- Include the Partial for the header including all of the necessary links -->
+<%- include('partials/header') -%>
+    <style>
+        #firstDivHeroPicture {
+            background-image: url("/images/mockup-featuring-two-iphones-x-floating-against-a-solid-color-background-28764.png");
+            /* The image used */
+            height: 78vw;
+            width: 100%;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            padding: 0px !important;
+            display: block;
+            margin: 0px !important;
+            overflow: hidden;
+            background-color: #b2e4f7;
+        }
+
+        #contentDivRowOne {
+            text-align: center;
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: Black;
+        }
+
+        #secondDivHeroPicture {
+            background-image: url("");
+            /* The image used */
+            background-color: white;
+            /* Used if the image is unavailable */
+            height: 700px;
+            /* You must set a specified height */
+            background-position: center;
+            /* Center the image */
+            background-repeat: no-repeat;
+            /* Do not repeat the image */
+            background-size: cover;
+            /* Resize the background image to cover the entire container */
+        }
+
+        .headerText {
+            font-size: 24px;
+            font-family: 'Poppins', sans-serif;
+            color: #47a0ee;
+
+        }
+
+        .subHeaderText {
+            font-size: 18px;
+            font-family: 'Arimo', sans-serif;
+            color: black;
+
+        }
+
+        .subSubHeaderText {
+            font-size: 16px;
+            font-family: 'Poppins', sans-serif;
+            color: #47a0ee;
+        }
+
+        /* Mobile Styles */
+
+        @media only screen and (max-width: 400px) {
+            .infoDivMarketChicago {
+                margin-left: 2vw;
+            }
+        }
+
+        /* Tablet Styles */
+
+        @media only screen and (min-width: 401px) and (max-width: 766px) {
+            .infoDivMarketChicago {
+                margin-left: 1vw;
+            }
+        }
+
+        /* Desktop Styles */
+
+        @media only screen and (min-width: 766px) {
+            .infoDivMarketChicago {}
+        }
+    </style>
+    <!-- Head Close -->
+    </head>
+    <!-- Body Start -->
+
+    <body>
+        <!-- Include the Partial for the preloader  -->
+        <%- include('partials/preloader') -%>
+
+            <!-- Include the Partial for the topbar (regular)-->
+            <%- include('partials/topBar') -%>
+                <div id="firstDivHeroPicture"></div>
+
+                <div id="contentDivRowOne">
+
+
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-6 infoDivMarketChicago" style="padding: 2vw;">
+                        <p class="headerText">What you can send</p>
+                        <p class="subHeaderText">From keys you forgot at a friends or those documents you need to send to a client, you can send anything
+                            that is under 25 pounds and fits into a standard sized milk crate.
+                        </p>
+                        <a target="_" href="https://apps.apple.com/us/app/posta-delivery-service/id1441905556">
+                            <p Class="subSubHeaderText">Get Started Now
+                                <span>
+                                    <img src="/images/next.png" style="height: 16px; width: auto;">
+                                </span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 infoDivMarketChicago" style="padding: 2vw;">
+                        <p class="headerText">How to send it</p>
+                        <p class="subHeaderText">Just download the Posta app on the Apple App Store, quickly create an account, and you are ready
+                            to send packages and receive locally on-demand all from your phone.
+                        </p>
+                        <a target="_" href="https://apps.apple.com/us/app/posta-delivery-service/id1441905556">
+                            <p Class="subSubHeaderText">Posta it
+                                <span>
+                                    <img src="/images/next.png" style="height: 16px; width: auto;">
+                                </span>
+                            </p>
+                        </a>
+                    </div>
+
+                </div>
+                <br>
+
+
+
+
+                <!-- Include the Partial for the bottom finishing the html (Body close tag is in bottom.ejs)-->
+                <%- include('partials/bottomBarUsers') -%>
+
+                    <!-- Include the Partial for the bottom finishing the html (Body close tag is in bottom.ejs)-->
+                    <%- include('partials/bottom') -%>

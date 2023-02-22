@@ -1,0 +1,157 @@
+<!-- Include the Partial for the header including all of the necessary links -->
+<%- include('partials/header') -%>
+
+    <style>
+        #topDivWithBar {
+            background-image: url("/images/PostaPromoCard.png");
+            background-color: rgb(28, 32, 52);
+            height: 65vw;
+            width: 100%;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            padding: 0px !important;
+            display: block;
+            margin: 0px !important;
+            overflow: hidden;
+        }
+
+        #aboutUsHeroImage2 {
+            background-image: url("/images/aboutUsHeroImage.png");
+            background-color: rgb(28, 32, 52);
+            height: 78vw;
+            width: 100%;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            padding: 0px !important;
+            display: block;
+            margin: 0px !important;
+            overflow: hidden;
+
+        }
+
+        .textMDdullA {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.6vw;
+            color: #5f8ce7bb;
+        }
+
+        .textMDreg {
+            font-family: 'Arimo', sans-serif;
+            font-size: 1.4vw;
+            color: rgba(91, 91, 91, 0.66);
+
+        }
+
+        .bannerText {
+            font-size: 4vw;
+            padding: 2vw;
+            font-family: 'Poppins', sans-serif;
+            color: #5f8ee8;
+        }
+
+
+        @media only screen and (max-width: 400px) {
+            #topDivWithBar {
+                background-image: url("/images/PostaPromoCard.png");
+                background-color: rgb(28, 32, 52);
+                height: 90vw;
+                width: 100%;
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                padding: 0px !important;
+                display: block;
+                margin: 0px !important;
+                overflow: hidden;
+            }
+        }
+    </style>
+
+    <!-- Head Close -->
+    </head>
+    <!-- Body Start -->
+
+    <body>
+        <!-- Include the Partial for the preloader  -->
+        <%- include('partials/preloader') -%>
+            <!-- Include the Partial for the topbar (regular)-->
+            <%- include('partials/topBar') -%>
+
+                <div class="" id="topDivWithBar">
+
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div id="aboutUsHeroImage2">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6">
+                            <br>
+                            <br>
+                            <p class="textMDdullA">What is Posta.</p>
+                            <p class="textMDreg ">Posta enables you to request a courier on-demand directly to where you are from our mobile application.
+                                This allows you to send and receive things locally whenever you want. In addition, Posta
+                                allows you to track your courier and delivery contents. Imagine the possibilities. That textbook
+                                you want to borrow from a buddy across campus, now you can just have it picked up and delivered
+                                to you. You got to work, but forgot that important report at home, don't sweat it, now you
+                                can use Posta to have a courier go grab it and bring it to you. Need to send a client documents
+                                right now, now you can use Posta to do it fast and easily.
+
+                            </p>
+
+                            <h4>Why we started.</h4>
+                            <p>We saw a problem and we decided to create a solution for it. There is no fancy explanation or
+                                big realization. Simply put, we just didn't understand why sending and receiving things locally
+                                with tracking capabilities was not possible. It also is very inefficient to have to go to
+                                a post office, pay for packaging, pay for the fare, and then have to wait five days for your
+                                package to get to the other side of the city. We are working to connect urban as well as
+                                metropolitan areas together by enabling them to send and receive physical things on their
+                                schedule.
+                            </p>
+                            <br>
+                            <br>
+
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <br>
+                            <br>
+                            <h4>Our Vision.</h4>
+                            <p>At Posta, we want to connect people through the ability to send and receive physical things.
+                                The user experience is what we focus on. Through cutting edge technological innovation and
+                                top notch support, we hope to make the process of sending or receiving anything locally enjoyable,
+                                easy, and most importantly, efficient.
+                            </p>
+                            <p>With the growing logistics demands, Posta is well positioned to help handle not just consumer
+                                to consumer deliveries, but also business to consumer. Posta offers an on-demand solution
+                                for small to mid sized businesses that are looking to offer their customers same day or on
+                                the spot delivery options. Furthermore, Posta is the perfect platform for business to business
+                                deliveries as well. Corporate and building mailrooms no longer have to pay excessive fees
+                                or wait extended period of time for their intercity delivery needs.
+                            </p>
+                            <p>Posta will expand into urban cities, large metro areas, and college towns. Starting with Chicago,
+                                Posta will slowly move outwards into new markets. The growth of Posta is premised on an unmatchable
+                                user experience, which starts with our Posta Partners, and is driven by our technology. We
+                                welcome all questions, insights, and concerns and hope to be in a market near you soon!
+                            </p>
+                            <br>
+                            <br>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- close main container -->
+
+                <!-- Include the Partial for the bottom finishing the html (Body close tag is in bottom.ejs)-->
+                <%- include('partials/bottomBarHome') -%>
+
+                    <!-- Include the Partial for the bottom finishing the html (Body close tag is in bottom.ejs)-->
+                    <%- include('partials/bottom') -%>

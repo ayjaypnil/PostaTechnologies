@@ -1,0 +1,130 @@
+<!-- Include the Partial for the header including all of the necessary links -->
+<%- include('partials/header') -%>
+
+    <style>
+        .helpBoxesContact {
+            border: 1px solid rgb(255, 255, 255);
+            padding: 5%;
+            background: #52b1f0bb;
+            COLOR: WHITE;
+        }
+
+        h4,
+        a {
+            color: white;
+        }
+
+
+
+        #firstRowDiv {
+            margin-top: 10%;
+        }
+
+        #secondRowDiv {
+            margin-bottom: 10%;
+        }
+
+        .supportPageIcon {
+            height: 5vw;
+            width: auto;
+        }
+
+        @media (min-width: 768px) {
+            .helpBoxesContact {
+                margin-top: 3%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .helpBoxesContact {
+                margin-top: 3%;
+                width: 90%;
+            }
+        }
+    </style>
+
+    <!-- Head Close -->
+    </head>
+    <!-- Body Start -->
+
+    <body>
+        <!-- Include the Partial for the preloader  -->
+        <%- include('partials/preloader') -%>
+            <!-- Include the Partial for the topbar (regular)-->
+            <%- include('partials/topBar') -%>
+
+                <div class="container">
+                    <div class="row" id="firstRowDiv">
+
+                        <center>
+                            <div class="col-sm-5 helpBoxesContact">
+                                <span aria-hidden="true">
+                                    <a href="/customer-support">
+                                        <img class="supportPageIcon" src="images/supportIcon.png">
+                                    </a>
+                                </span>
+                                <h4>
+                                    <a href="/customer-support">Customer Support</a>
+                                </h4>
+                            </div>
+                        </center>
+                        <center>
+                            <div class="col-sm-2 ">
+
+                            </div>
+                        </center>
+                        <center>
+                            <div class="col-sm-5 helpBoxesContact">
+
+                                <span aria-hidden="true">
+                                    <a href="/partner-support">
+                                        <img class="supportPageIcon" src="images/supportPagePartnerSupportIcon.png">
+                                    </a>
+                                </span>
+                                <h4>
+                                    <a href="/partner-support">Partner Support</a>
+                                </h4>
+                            </div>
+                        </center>
+
+                    </div>
+                    <div class="row" id="secondRowDiv">
+                        <center>
+                            <div class="col-sm-5 helpBoxesContact">
+                                <span aria-hidden="true">
+                                    <a href="/mobileapp">
+                                        <img class="supportPageIcon" src="images/supportPageMobileAppIcon.png">
+                                    </a>
+                                </span>
+                                <h4>
+                                    <a href="/mobileapp">Mobile App</a>
+                                </h4>
+                            </div>
+                        </center>
+                        <center>
+                            <div class="col-sm-2 ">
+
+                            </div>
+                        </center>
+                        <center>
+                            <div class="col-sm-5 helpBoxesContact" id="sampleBox">
+                                <span aria-hidden="true">
+                                    <a href="/contact-posta">
+                                        <img class="supportPageIcon" src="images/supportPageContactUsIcon.png">
+                                    </a>
+                                </span>
+                                <h4>
+                                    <a href="/contact-posta">Contact Us</a>
+                                </h4>
+                            </div>
+                        </center>
+                    </div>
+                </div>
+
+
+
+                <!-- Include the Partial for the bottom finishing the html (Body close tag is in bottom.ejs)-->
+                <%- include('partials/bottomBarUsers') -%>
+
+                    <!-- Include the Partial for the bottom finishing the html (Body close tag is in bottom.ejs)-->
+                    <%- include('partials/bottom') -%>

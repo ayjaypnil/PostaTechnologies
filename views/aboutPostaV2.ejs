@@ -1,0 +1,341 @@
+<!-- Include the Partial for the header including all of the necessary links -->
+<%- include('partials/header') -%>
+    <style>
+        .partnerPageGetStartedToday {
+            margin: auto;
+        }
+
+        @media only screen and (max-width: 400px) {
+            video {
+                height: 85vw;
+                width: 100%;
+            }
+            #aboutUsHeroImage2 {
+                background-image: url("/images/aboutUsHeroImage2.png");
+                background-color: rgb(255, 255, 255);
+                height: 90vw;
+                width: 100%;
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                padding: 0px !important;
+                display: block;
+                margin: 0px !important;
+                overflow: hidden;
+            }
+            .aboutPageBottomButtons {
+                font-family: 'Poppins', sans-serif;
+                font-size: 2.5vw;
+                background: #5f8ce766;
+                color: white;
+                padding: 3px;
+            }
+
+            .textMDdullA {
+                font-family: 'Poppins', sans-serif;
+                font-size: 4.5vw;
+                color: #5f8ce7bb;
+            }
+
+            .textMDreg {
+                font-family: 'Arimo', sans-serif;
+                font-size: 3.3vw;
+                color: rgba(91, 91, 91, 0.66);
+
+            }
+            .aboutPageTextContentDiv {
+                padding: 0 10vw;
+            }
+
+            .homePagePromoUserPicOne {
+                height: 63vw;
+                width: 100%;
+            }
+
+            .headerText {
+                font-size: 24px;
+                font-family: 'Poppins', sans-serif;
+                color: #47a0ee;
+            }
+
+            .subHeaderText {
+                font-size: 18px;
+                font-family: 'Arimo', sans-serif;
+                color: rgba(26, 26, 26, 0.578);
+            }
+            .subSubheaderText {
+                font-size: 16px;
+                font-family: 'Poppins', sans-serif;
+                color: #47a0ee;
+            }
+        }
+
+        @media only screen and (min-width: 401px) and (max-width: 767px) {
+            video {
+                height: 75vw;
+                width: 100%;
+            }
+            #aboutUsHeroImage2 {
+                background-image: url("/images/aboutUsHeroImage2.png");
+                background-color: rgb(255, 255, 255);
+                height: 83vw;
+                width: 100%;
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                padding: 0px !important;
+                display: block;
+                margin: 0px !important;
+                overflow: hidden;
+            }
+            .aboutPageBottomButtons {
+                font-family: 'Poppins', sans-serif;
+                font-size: 2vw;
+                background: #5f8ce766;
+                color: white;
+                padding: 3px;
+            }
+            .textMDdullA {
+                font-family: 'Poppins', sans-serif;
+                font-size: 2.7vw;
+                color: #5f8ce7bb;
+            }
+
+            .textMDreg {
+                font-family: 'Arimo', sans-serif;
+                font-size: 2.3vw;
+                color: rgba(91, 91, 91, 0.66);
+
+            }
+            .aboutPageTextContentDiv {
+                padding: 0 10vw;
+            }
+
+            .homePagePromoUserPicOne {
+                height: 53vw;
+                width: 100%;
+            }
+            .homePagePromoUserPicTwo {
+                height: 65vw;
+                width: 100%;
+            }
+
+            .headerText {
+                font-size: 24px;
+                font-family: 'Poppins', sans-serif;
+                color: #47a0ee;
+            }
+
+            .subHeaderText {
+                font-size: 18px;
+                font-family: 'Arimo', sans-serif;
+                color: rgba(26, 26, 26, 0.578);
+            }
+            .subSubheaderText {
+                font-size: 16px;
+                font-family: 'Poppins', sans-serif;
+                color: #47a0ee;
+            }
+        }
+
+        @media only screen and (min-width: 768px) {
+
+            video {
+                height: 65vw;
+                width: 100%;
+            }
+
+            #aboutUsHeroImage2 {
+                background-image: url("/images/aboutUsHeroImage.png");
+                background-color: rgb(255, 255, 255);
+                height: 78vw;
+                width: 100%;
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                padding: 0px !important;
+                display: block;
+                margin: 0px !important;
+                overflow: hidden;
+            }
+
+            .textMDdullA {
+                font-family: 'Poppins', sans-serif;
+                font-size: 2.3vw;
+                color: #5f8ce7bb;
+            }
+
+            .textMDreg {
+                font-family: 'Arimo', sans-serif;
+                font-size: 1.8vw;
+                color: rgba(91, 91, 91, 0.66);
+
+            }
+
+
+            .bannerText {
+                font-size: 4vw;
+                padding: 2vw;
+                font-family: 'Poppins', sans-serif;
+                color: #699dfe;
+            }
+            .nextArrowIcon {
+                height: 4vw;
+                width: auto;
+            }
+
+            .aboutPageBottomButtons {
+                font-family: 'Poppins', sans-serif;
+                font-size: 1.5vw;
+                background: #5f8ce766;
+                color: white;
+                padding: 3px;
+            }
+            .aboutPageTextContentDiv {
+                padding: 0 10vw;
+            }
+            .threeBoxPromoRow {
+                justify-content: center;
+                align-items: center;
+                display: flex;
+            }
+
+            .homePagePromoUserPicOne {
+                height: 33vw;
+                width: 100%;
+            }
+
+
+            .headerText {
+                font-size: 24px;
+                font-family: 'Poppins', sans-serif;
+                color: #47a0ee;
+            }
+
+            .subHeaderText {
+                font-size: 18px;
+                font-family: 'Arimo', sans-serif;
+                color: rgba(26, 26, 26, 0.578);
+            }
+            .subSubheaderText {
+                font-size: 16px;
+                font-family: 'Poppins', sans-serif;
+                color: #47a0ee;
+            }
+        }
+    </style>
+
+    <!-- Head Close -->
+    </head>
+    <!-- Body Start -->
+
+    <body>
+        <!-- Include the Partial for the preloader  -->
+        <%- include('partials/preloader') -%>
+            <!-- Include the Partial for the topbar (regular)-->
+            <%- include('partials/topBar') -%>
+
+                <!-- <video poster="/images/PostaPromoCard.png" controls>
+                    <source src="/images/intro-maker-for-a-logo-reveal-with-liquid-animations-1632.mp4" type="video/mp4">
+                </video> -->
+                <div poster="/images/PostaPromoCard.png" class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="/images/PostaAboutPromoVideo.mp4" allowfullscreen></iframe>
+                </div>
+
+                <br>
+                <br>
+
+
+                <div class="container">
+                    <div class="row threeBoxPromoRow">
+                        <div class="col-xs-12 col-sm-7">
+                            <img class="img-responsive homePagePromoUserPicOne" src="/images/mockup-featuring-two-overlapping-iphones-xs-max-and-a-solid-color-backdrop-251-el.png">
+                        </div>
+                        <div class="col-xs-12 col-sm-5">
+                            <p class="headerText">
+                                Send it with Posta
+                            </p>
+                            <p class="subHeaderText">
+                                The ease, convenience, and power of Posta's local logistics platform in the palm of your hand. Click below to see how the
+                                Posta app works step by step.
+                            </p>
+                            <p class="subSubHeaderText">
+                                <a href="/mobileapp">How Posta works
+                                    <span>
+                                        <img src="/images/next.png" style="height: 16px; width: auto;">
+                                    </span>
+                                </a>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div id="aboutUsHeroImage2">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row threeBoxPromoRow">
+
+                        <div class="col-xs-12 col-sm-5">
+                            <p class="headerText">
+                                Posta it!
+                            </p>
+                            <p class="subHeaderText">
+                                Posta makes sending anything locally easy. Simply download the app, request, and sit back while the magic happens!
+                            </p>
+                            <p class="subSubHeaderText">
+                                <a href="https://apps.apple.com/us/app/posta-delivery-service/id1441905556" target="_blank">Get the App
+                                    <span>
+                                        <img src="/images/next.png" style="height: 16px; width: auto;">
+                                    </span>
+                                </a>
+                            </p>
+
+                        </div>
+                        <div class="col-xs-12 col-sm-7">
+                            <img class="img-responsive homePagePromoUserPicTwo" src="/images/iphone-xs-max-mockup-featuring-a-color-custom-backdrop-244-el.png">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="container-fluid" style="margin-top: 3vw;">
+                    <div class="row">
+                        <div class="col-xs-2">
+
+                        </div>
+                        <div class="col-xs-4 btn btn-sm">
+                            <center>
+                                <a href="/contact-posta" target="_blank">
+                                    <p class="aboutPageBottomButtons ">Contact Us</p>
+                                </a>
+                            </center>
+                        </div>
+                        <div class="col-xs-4 btn btn-sm ">
+                            <center>
+                                <a href="/postapartners" target="_blank">
+                                    <p class="aboutPageBottomButtons ">Posta Partners</p>
+                                </a>
+                            </center>
+                        </div>
+                        <div class="col-xs-2 ">
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Include the Partial for the bottom finishing the html (Body close tag is in bottom.ejs)-->
+                <%- include('partials/bottomBarHome') -%>
+
+                    <!-- Include the Partial for the bottom finishing the html (Body close tag is in bottom.ejs)-->
+                    <%- include('partials/bottom') -%>

@@ -1,0 +1,405 @@
+<!-- Include the Partial for the header including all of the necessary links -->
+<%- include('partials/header') -%>
+    <style>
+        body {}
+
+        #headSectionPartnerHome {
+            background-image: url("/images/guydeliveringtogirl.jpg");
+            background-color: rgb(255, 255, 255);
+            height: 70vw;
+            width: 100%;
+            /* background-position: center center; */
+            background-repeat: no-repeat;
+            background-size: contain;
+            padding: 0px !important;
+            display: block;
+            margin: 0px !important;
+            overflow: hidden;
+        }
+
+        .partnerPageGetStartedToday {
+            margin: auto;
+        }
+
+        #partnerPageGetStartedTodayLink {
+            color: #5f8ee8;
+            text-decoration: none !important;
+
+        }
+
+        a {
+            text-decoration: none !important;
+        }
+
+        .nextArrowIcon {
+            height: 4vw;
+            width: auto;
+        }
+
+        .bannerText {
+            font-size: 4vw;
+            padding: 2vw;
+            font-family: 'Poppins', sans-serif;
+            color: #5f8ee8;
+        }
+
+        .partnerPageImageStyling {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .partnerPageImageBackgroundA {
+            background: #5f8ce764;
+
+        }
+
+        .partnerPageImageBackgroundB {
+            background: #55b6ce9a;
+        }
+
+        .emptyRowDiv {
+            border-bottom: 1px solid black;
+            margin: 2vw 25vw;
+
+        }
+
+        .partnerGettingStartedSteps {
+            background: #9ce7fac1;
+        }
+
+
+
+        @media only screen and (max-width: 400px) {
+            #bannerText {
+                font-size: 5vw;
+                padding: 2vw;
+            }
+            .textLG {
+                font-family: 'Poppins', sans-serif;
+                font-size: 4.5vw;
+                color: rgba(69, 69, 69, 0.872);
+            }
+            .infoDivBizIcons {
+                height: 12vw;
+                width: auto;
+            }
+            .infoDivBizIconsLG {
+                height: 15vw;
+                width: auto;
+            }
+            .textMDdullA {
+                font-family: 'Poppins', sans-serif;
+                font-size: 4.5vw;
+                color: #5f8ce7bb;
+            }
+            .textMDdullB {
+                font-family: 'Poppins', sans-serif;
+                font-size: 4.5vw;
+                color: #61cee9c1;
+            }
+            .textMDreg {
+                font-family: 'Arimo', sans-serif;
+                font-size: 4vw;
+                color: rgba(67, 67, 67, 0.557);
+            }
+            .textSM1 {
+                font-family: 'Poppins', sans-serif;
+                font-size: 3.5vw;
+                color: #47a0ee;
+
+            }
+            .nextArrowIcon {
+                height: 14px;
+                width: auto;
+            }
+
+            .partnerPageBottomButtons {
+                font-family: 'Poppins', sans-serif;
+                font-size: 2.5vw;
+                background: #5f8ce766;
+                color: white;
+            }
+        }
+
+
+        @media only screen and (min-width: 401px) and (max-width: 767px) {
+            #bannerText {
+                font-size: 4vw;
+                padding: 2vw;
+            }
+            .textLG {
+                font-family: 'Poppins', sans-serif;
+                font-size: 2.5vw;
+                color: rgba(69, 69, 69, 0.872);
+            }
+            .infoDivBizIcons {
+                height: 5vw;
+                width: auto;
+            }
+            .infoDivBizIconsLG {
+                height: 7vw;
+                width: auto;
+            }
+            .textMDdullA {
+                font-family: 'Poppins', sans-serif;
+                font-size: 2vw;
+                color: #5f8ce7bb;
+            }
+            .textMDdullB {
+                font-family: 'Poppins', sans-serif;
+                font-size: 2vw;
+                color: #61cee9c1;
+            }
+            .textMDreg {
+                font-family: 'Arimo', sans-serif;
+                font-size: 1.7vw;
+                color: rgba(67, 67, 67, 0.557);
+                padding: 1vw;
+            }
+            .textSM1 {
+                font-family: 'Poppins', sans-serif;
+                font-size: 1.5vw;
+                color: #47a0ee;
+
+            }
+            .nextArrowIcon {
+                height: 14px;
+                width: auto;
+            }
+
+            .partnerPageBottomButtons {
+                font-family: 'Poppins', sans-serif;
+                font-size: 2vw;
+                background: #5f8ce766;
+                color: white;
+            }
+        }
+
+        @media only screen and (min-width: 768px) {
+            .bizPageMainContentRow {
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                padding: 1vw;
+            }
+            .textLG {
+                font-family: 'Poppins', sans-serif;
+                font-size: 1.7vw;
+                color: rgba(69, 69, 69, 0.872);
+            }
+            .textMDdullA {
+                font-family: 'Poppins', sans-serif;
+                font-size: 1.6vw;
+                color: #5f8ce7bb;
+            }
+            .textMDdullB {
+                font-family: 'Poppins', sans-serif;
+                font-size: 1.6vw;
+                color: #61cee9c1;
+            }
+
+            .textMDreg {
+                font-family: 'Arimo', sans-serif;
+                font-size: 1.4vw;
+                color: rgba(91, 91, 91, 0.66);
+
+            }
+            .infoDivBizIcons {
+                height: 7vw;
+                width: auto;
+                margin-bottom: 1vw;
+            }
+
+            .partnerPageBottomButtons {
+                font-family: 'Poppins', sans-serif;
+                font-size: 1.5vw;
+                background: #5f8ce766;
+                color: white;
+            }
+
+        }
+    </style>
+
+    <!-- Head Close -->
+    </head>
+    <!-- Body Start -->
+
+    <body>
+        <!-- Include the Partial for the preloader  -->
+        <%- include('partials/preloader') -%>
+            <!-- Include the Partial for the topbar (regular)-->
+            <%- include('partials/topBar') -%>
+
+                <!-- First Row on this page, topbar for partners is included in it -->
+                <div id="headSectionPartnerHome">
+
+                </div>
+                <div class="row partnerPageGetStartedToday">
+                    <center>
+                        <p class="bannerText">
+                            <a id="partnerPageGetStartedTodayLink" href="http://posta-technologies.breezy.hr/p/ca5738b267fd-posta-partner-courier" target="_blank">Start Earning Now
+                                <span>
+                                    <img src="/images/next (1).png" class="nextArrowIcon">
+                                </span>
+                            </a>
+                        </p>
+                    </center>
+                </div>
+
+                <div class="row emptyRowDiv">
+
+                </div>
+
+                <!-- container for three boxes -->
+                <div class="container">
+                    <div class="row bizPageMainContentRow">
+                        <div class="col-xs-12 col-sm-7">
+                            <center>
+                                <img class="partnerPageImageStyling partnerPageImageBackgroundA" src="/images/partnerPageCourierReq.png">
+                            </center>
+                        </div>
+                        <div class="col-xs-12 col-sm-5 ">
+                            <p class="textMDdullA">Great earnings, no set schedule.</p>
+                            <p class="textMDreg"> Our Posta Partners log on and off the platform when it is most convenient for them. On average,
+                                each job nets our Partners $12, and takes an average of 21 minutes to complete from acceptance
+                                to delivery.</p>
+
+                        </div>
+                    </div>
+
+
+                    <div class="row bizPageMainContentRow">
+                        <div class="col-xs-12 col-sm-5">
+                            <p class="textMDdullB">Fast and easy local deliveries. </p>
+                            <p class="textMDreg">We operate in compact urban areas and have guidelines as to what users can send on the platform.
+                                Log on in our area of operation, and have the peace of mind that you won't be traveling very
+                                far or taking anything large.</p>
+
+                        </div>
+                        <div class="col-xs-12 col-sm-7 partnerPageImageBackgroundB">
+                            <center>
+                                <img class="partnerPageImageStyling" src="/images/partnerPageCourierPickup.png">
+                            </center>
+                        </div>
+                    </div>
+
+                    <div class="row bizPageMainContentRow">
+                        <div class="col-xs-12 col-sm-7 partnerPageImageBackgroundA">
+                            <center>
+                                <img class="partnerPageImageStyling " src="/images/partnerPageTransPayment.png">
+                            </center>
+                        </div>
+                        <div class="col-xs-12 col-sm-5">
+
+                            <p class="textMDdullA">Quick and transparent payments.</p>
+                            <p class="textMDreg">Each job accepted and completed on the platform gets you paid. You chose how you want to be paid
+                                as well as the frequency of when you get paid all in the app. Our payments are handled through
+                                industry leading payment processor Stripe. </p>
+
+                        </div>
+                    </div>
+
+                </div>
+                <!-- spacer Get started as a Partner div -->
+
+                <div class="row partnerPageGetStartedToday">
+                    <center>
+                        <p class="bannerText">
+                            <a id="partnerPageGetStartedTodayLink" href="http://posta-technologies.breezy.hr/p/ca5738b267fd-posta-partner-courier" target="_blank">Get Started
+                                <span>
+                                    <img src="/images/next (1).png" class="nextArrowIcon">
+                                </span>
+                            </a>
+                        </p>
+                    </center>
+                </div>
+
+                <!-- Empty div for underline separator -->
+                <div class="row emptyRowDiv">
+
+                </div>
+
+
+                <!-- How to apply and steps div -->
+
+                <div class="container ">
+                    <div class="row ">
+                        <center>
+                            <p style="margin-bottom: 3vw;" class="textLG">Getting started is fast, easy, and free! </p>
+                        </center>
+                        <div class="col-xs-12 col-sm-4">
+                            <center>
+                                <span>
+                                    <img src="/images/pencil.png" class="infoDivBizIcons">
+                                </span>
+                                <p class="textMDdullB">
+                                    Apply Online
+                                </p>
+                                <p class="textMDreg">Once you apply, our team will send you an informational to fill out for us to get to know
+                                    you.
+                                </p>
+                            </center>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <center>
+                                <span>
+                                    <img src="/images/test.png" class="infoDivBizIcons">
+                                </span>
+                                <p class="textMDdullB">Quick Screens</p>
+                                <p class="textMDreg">After our team receives your informational, we will schedule a quick phone screen and send
+                                    a brief background check.
+                                </p>
+                            </center>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <center>
+                                <span>
+                                    <img src="/images/distance.png" class="infoDivBizIcons">
+                                </span>
+                                <p class="textMDdullB">Go Live</p>
+                                <p class="textMDreg">When we get the results back, we will send you your onboarding materials, and you will be
+                                    ready to go.</p>
+                            </center>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+                <br>
+                <br>
+                <div class="container-fluid" style="margin-top: 10vw;">
+                    <div class="row">
+                        <div class="col-xs-2">
+
+                        </div>
+                        <div class="col-xs-4 btn btn-sm">
+                            <center>
+                                <a href="http://posta-technologies.breezy.hr/p/ca5738b267fd-posta-partner-courier" target="_blank">
+                                    <p class="partnerPageBottomButtons">Apply Here</p>
+                                </a>
+                            </center>
+                        </div>
+                        <div class="col-xs-4 btn btn-sm">
+                            <center>
+                                <a href="/partner-support">
+                                    <p class="partnerPageBottomButtons">Partner Support</p>
+                                </a>
+                            </center>
+                        </div>
+                        <div class="col-xs-2">
+
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+
+                <!-- Include the Partial for the bottom finishing the html (Body close tag is in bottom.ejs)-->
+                <%- include('partials/bottomBarPartners') -%>
+
+                    <!-- Include the Partial for the bottom finishing the html (Body close tag is in bottom.ejs)-->
+                    <%- include('partials/bottom') -%>

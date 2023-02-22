@@ -1,0 +1,417 @@
+<!-- Include the Partial for the header including all of the necessary links -->
+<%- include('partials/header') -%>
+
+    <style>
+        .businessPageHeroDiv {
+            background-image: url("/images/packageswhitetable.1.jpg");
+            background-color: white;
+            height: 70vw;
+            width: 100%;
+            /* background-position: center center; */
+            background-repeat: no-repeat;
+            background-size: contain;
+            padding: 0px !important;
+            display: block;
+            margin: 0px !important;
+            overflow: hidden;
+        }
+
+        #postaBusinessSecondRow {
+            background: white;
+            margin-bottom: 5vw;
+        }
+
+        p {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        a {
+            text-decoration: none !important;
+        }
+
+        #bizPagePromoUserPicOne {
+            height: auto;
+            width: 100%;
+
+        }
+
+        #bizPagePromoUserPicTwo {
+            height: auto;
+            width: 100%;
+
+        }
+
+        .underlineDiv {
+            border-bottom: 1px solid black;
+            margin: 0 25% 5% 25%;
+        }
+
+        .parachuteDivUnderUnderline {
+            height: 5vw;
+            width: auto;
+        }
+
+        @media only screen and (max-width: 401px) {
+            #bannerText {
+                font-size: 5vw;
+                padding: 2vw;
+            }
+            .textLG {
+                font-family: 'Poppins', sans-serif;
+                font-size: 4.5vw;
+                color: rgba(69, 69, 69, 0.872);
+            }
+            .infoDivBizIcons {
+                height: 12vw;
+                width: auto;
+            }
+            .infoDivBizIconsLG {
+                height: 15vw;
+                width: auto;
+            }
+            .textMDdull {
+                font-family: 'Poppins', sans-serif;
+                font-size: 4.5vw;
+                color: #5f8ce7a5;
+            }
+            .textMDreg {
+                font-family: 'Arimo', sans-serif;
+                font-size: 4vw;
+                color: rgba(67, 67, 67, 0.557);
+            }
+            .textSM1 {
+                font-family: 'Poppins', sans-serif;
+                font-size: 3.5vw;
+                color: #47a0ee;
+
+            }
+            .nextArrowIcon {
+                height: 14px;
+                width: auto;
+            }
+
+            .bizPageContentDivText {
+                margin: 0 2vw;
+            }
+            #bizPagePromoUserPicOne {
+                margin-bottom: 3vw;
+
+            }
+            #bizPagePromoUserPicTwo {
+                margin-bottom: 3vw;
+            }
+            .bizPageThreeStepTextContent {
+                padding: 5vw;
+            }
+
+        }
+
+
+        @media only screen and (min-width: 401px) and (max-width: 961px) {
+            #bannerText {
+                font-size: 4vw;
+                padding: 2vw;
+            }
+
+
+            .textLG {
+                font-family: 'Poppins', sans-serif;
+                font-size: 2.5vw;
+                color: rgba(69, 69, 69, 0.872);
+            }
+            .infoDivBizIcons {
+                height: 5vw;
+                width: auto;
+            }
+            .infoDivBizIconsLG {
+                height: 7vw;
+                width: auto;
+            }
+            .textMDdull {
+                font-family: 'Poppins', sans-serif;
+                font-size: 2vw;
+                color: #5f8ce7a5;
+            }
+            .textMDreg {
+                font-family: 'Arimo', sans-serif;
+                font-size: 1.7vw;
+                color: rgba(67, 67, 67, 0.557);
+            }
+            .textSM1 {
+                font-family: 'Poppins', sans-serif;
+                font-size: 1.5vw;
+                color: #47a0ee;
+
+            }
+            .nextArrowIcon {
+                height: 14px;
+                width: auto;
+            }
+
+            .bizPageContentDivText {
+                padding: 25px;
+            }
+
+            #bizPageThreeSteps {
+                margin-top: 3vw;
+                background: rgba(208, 243, 255, 0.461);
+            }
+            .bizPageThreeStepTextContent {
+                padding: 3vw;
+            }
+
+        }
+
+        @media only screen and (min-width: 766px) {
+            #bizPagePromoUserPicOne {
+                clip-path: polygon(40% 0, 100% 0, 100% 100%, 0 100%);
+
+            }
+            #bizPagePromoUserPicTwo {
+                clip-path: polygon(0 0, 100% 0, 60% 100%, 0 100%);
+
+            }
+            .bizPageThreeStepTextContent {
+                padding: 3vw;
+            }
+
+            #bannerText {
+                font-size: 4vw;
+                padding: 2vw;
+            }
+
+            .infoDivBizIcons {
+                height: 7vw;
+                width: auto;
+            }
+            .infoDivBizIconsLG {
+                height: 9vw;
+                width: auto;
+            }
+            .textLG {
+                font-family: 'Poppins', sans-serif;
+                font-size: 1.7vw;
+                color: rgba(69, 69, 69, 0.872);
+            }
+            .textMDdull {
+                font-family: 'Poppins', sans-serif;
+                font-size: 1.6vw;
+                color: #5f8ce7;
+            }
+            .textMDreg {
+                font-family: 'Arimo', sans-serif;
+                font-size: 1.4vw;
+                color: rgba(67, 67, 67, 0.557);
+            }
+            .textSM1 {
+                font-family: 'Poppins', sans-serif;
+                font-size: 1vw;
+                color: #47a0ee;
+
+            }
+            .nextArrowIcon {
+                height: 16px;
+                width: auto;
+            }
+            .bizPageContentDivText1 {
+                padding-left: 25px;
+            }
+
+            #bizPageThreeSteps {
+                margin-top: 3vw;
+                background: rgba(208, 243, 255, 0.461);
+            }
+            .bizPageMainContentRow {
+                justify-content: center;
+                align-items: center;
+                display: flex;
+            }
+            .col-sm-pull-7 {
+                left: 50%;
+                padding-right: 5vw;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .col-sm-push-5 {
+                right: 50% !important;
+                left: -53% !important;
+            }
+
+        }
+    </style>
+    <!-- Head Close -->
+    </head>
+    <!-- Body Start -->
+
+    <body>
+        <!-- Include the Partial for the preloader  -->
+        <%- include('partials/preloader') -%>
+            <div class="row">
+                <!-- Include the Partial for the topbar (regular)-->
+                <%- include('partials/topBar') -%>
+            </div>
+            <div class="row businessPageHeroDiv">
+
+            </div>
+
+            <div class="row" id="postaBusinessSecondRow">
+                <center>
+                    <p style=" color: #5f8ce7a5;" id="bannerText">Seamlessly get your products to customers using the Posta platform</p>
+
+                </center>
+            </div>
+            <div class="row underlineDiv">
+
+            </div>
+
+
+            <!-- Main Content side to side rows -->
+            <div class="container-fluid">
+                <div class="row bizPageMainContentRow">
+                    <div class="col-xs-12 col-sm-5 bizPageContentDivText1 ">
+                        <p class="textLG ">Delivery, without the overhead.</p>
+                        <p class="textMDdull ">
+                            <span>
+                                <img src="/images/standard-shipping.png" class="infoDivBizIcons">
+                            </span>
+                            Offer fast local shipping
+                        </p>
+
+                        <p class="textMDreg ">Consumers want their products as fast as possible. Getting orders to your customers can be an expensive
+                            challenge. Posta gets your local customers their products immediately without any additional
+                            work on your end.
+                        </p>
+                        <a target="_" href="https://apps.apple.com/us/app/posta-delivery-service/id1441905556">
+                            <p Class="textSM1 ">Grow your business capabilities
+                                <span>
+                                    <img src="/images/next.png" class="nextArrowIcon">
+                                </span>
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-7" id="">
+                        <img class="img-responsive " id="bizPagePromoUserPicOne" src="/images/postaForBizRow1Pic.png">
+
+                    </div>
+                </div>
+                <!-- row two Main Content area -->
+
+                <div class="row bizPageMainContentRow">
+
+                    <div class="col-xs-12 col-sm-pull-7 bizPageContentDivText ">
+                        <p class="textLG ">Your business, Posta Logistics.</p>
+                        <p class="textMDdull ">
+                            <span>
+                                <img src="/images/shipping (2).png" class="infoDivBizIcons">
+                            </span>
+                            Use our network of couriers
+                        </p>
+
+                        <p class="textMDreg ">You take care of the business, let us take care of the local logistics. Just download the app, register,
+                            and start sending orders in our area of operation. All the recipient needs is a cell phone, app
+                            is not required.
+                        </p>
+                        <a target="_" href="https://apps.apple.com/us/app/posta-delivery-service/id1441905556">
+                            <p Class="textSM1 ">Posta it
+                                <span>
+                                    <img src="/images/next.png" class="nextArrowIcon">
+                                </span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="col-xs-12 col-sm-push-5" id="">
+                        <img class="img-responsive " id="bizPagePromoUserPicTwo" src="/images/bizPageMainContentPicTwo.png">
+
+                    </div>
+
+
+                </div>
+            </div>
+            <!-- 3 Steps  -->
+
+            <div class="container-fluid">
+                <div class="row" id="bizPageThreeSteps">
+                    <div class="row " style="margin: 3vw;">
+                        <center>
+                            <span>
+                                <img src="/images/shipping.png" class="infoDivBizIconsLG">
+                            </span>
+                            <p class="textLG" style="color: #5f8ce7;">
+                                Use Posta to send orders locally today!
+
+                            </p>
+                        </center>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 " style="">
+                        <center>
+                            <p class="textMDdull">
+                                Step 1
+                            </p>
+                            <span>
+                                <img src="/images/preorder.png" class="infoDivBizIcons">
+                            </span>
+                        </center>
+                        <center>
+                            <p class="textMDreg bizPageThreeStepTextContent" style="">
+                                Download the Posta App and create an account. Take orders as you normally would. Just let your local customers know you are
+                                able to Posta them their order.
+                            </p>
+                        </center>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 " style="">
+                        <center>
+                            <p class="textMDdull">
+                                Step 2
+                            </p>
+                            <span>
+                                <img src="/images/warranty.png" class="infoDivBizIcons">
+                            </span>
+                        </center>
+                        <center>
+                            <p class="textMDreg bizPageThreeStepTextContent" style="">
+                                Confirm your customer, the recipient, has the ability to receive text messages. Then request a courier within the app. You
+                                can send anything up to 25 pounds within our area of operation to your customers. </p>
+                        </center>
+                    </div>
+                    <div class="col-xs-12 col-sm-4" style="">
+                        <center>
+                            <p class="textMDdull ">
+                                Step 3
+                            </p>
+                            <span>
+                                <img src="/images/self-collect.png" class="infoDivBizIcons">
+                            </span>
+                        </center>
+                        <center>
+                            <p class="textMDreg bizPageThreeStepTextContent" style="">
+                                Hand the order off to your requested courier. Both sender and recipient can track the package. Once the package is delivered,
+                                the recipient will enter the previously sent security code and the delivery is complete!
+                            </p>
+                        </center>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="row" style="margin-top: 3vw;">
+                    <div class="col-xs-12">
+                        <center>
+
+                            <p class="textLG">Have any questions?</p>
+                            <p>
+                                <a href="/contact-posta" class="btn btn-md">Let's Talk</a>
+                            </p>
+                        </center>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- Include the Partial for the bottom finishing the html (Body close tag is in bottom.ejs)-->
+            <%- include('partials/bottomBarUsers') -%>
+
+                <!-- Include the Partial for the bottom finishing the html (Body close tag is in bottom.ejs)-->
+                <%- include('partials/bottom') -%>

@@ -1,0 +1,37 @@
+<!-- Include the Partial for the header including all of the necessary links -->
+<%- include('partials/header') -%>
+
+    <style>
+        #sampleID {
+            background-image: linear-gradient(to right, #82a7f0, #7fadf2, #7cb2f3, #7cb8f3, #7cbdf3, #77c2f3, #74c6f2, #72caf1, #6aceef, #64d2eb, #62d6e5, #64d9df);
+            height: 70vw;
+            width: 100%;
+            /* background-position: center center; */
+            background-repeat: no-repeat;
+            background-size: contain;
+            padding: 0px !important;
+            display: block;
+            margin: 0px !important;
+            overflow: hidden;
+        }
+    </style>
+
+    <!-- Head Close -->
+    </head>
+
+    <!-- Body Start -->
+
+    <body>
+        <!-- Include the Partial for the preloader  -->
+        <%- include('partials/preloader') -%>
+            <!-- Include the Partial for the topbar (regular)-->
+            <%- include('partials/topBar') -%>
+                <div id="sampleID">
+
+                </div>
+
+                <!-- Include the Partial for the bottom finishing the html (Body close tag is in bottom.ejs)-->
+                <%- include('partials/bottomBarHome') -%>
+
+                    <!-- Include the Partial for the bottom finishing the html (Body close tag is in bottom.ejs)-->
+                    <%- include('partials/bottom') -%>

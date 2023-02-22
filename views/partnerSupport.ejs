@@ -1,0 +1,348 @@
+<!-- Include the Partial for the header including all of the necessary links -->
+<%- include('partials/header') -%>
+    <style>
+        .jumbotron {
+            background: #0082ff;
+            color: white;
+        }
+
+        li.btn {
+            background: #0082ff;
+            color: white;
+        }
+
+        .nav-pills>li.active>a,
+        .nav-pills>li.active>a:focus,
+        .nav-pills>li.active>a:hover {
+            text-decoration: rgb(255, 235, 209);
+        }
+
+        .tab-content {
+            margin-bottom: 15%;
+        }
+    </style>
+    <!-- Head Close -->
+    </head>
+    <!-- Body Start -->
+
+    <body>
+        <!-- Include the Partial for the preloader  -->
+        <%- include('partials/preloader') -%>
+            <main>
+                <div class="container">
+                    <!-- Include the Partial for the topbar (regular)-->
+                    <%- include('partials/topBar') -%>
+                        <div>
+
+                            <div class="row " id="supportDivOne">
+                                <div class="jumbotron container">
+                                    <h1>
+                                        <center>Partner Support</center>
+                                    </h1>
+                                    <p>
+                                        <center>Welcome to the Posta Partner Support Center. </center>
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                </div>
+                <br>
+
+                <div class="container">
+                    <center>
+                        <div class="row">
+                            <!-- Nav tabs -->
+                            <ul class="btn nav-pills" style="list-style: none;" role="">
+                                <li role="presentation" class="btn">
+                                    <a href="#generalpartner" aria-controls="generalpartner" role="tab" data-toggle="tab" style="color: white;">General </a>
+                                </li>
+
+                                <li role="presentation" class="btn">
+                                    <a href="#messages" aria-controls="messages" role="tab" data-toggle="tab" style="color: white;">Mobile App</a>
+                                </li>
+                                <li role="presentation" class="btn">
+                                    <a href="#settings" aria-controls="settings" role="tab" data-toggle="tab" style="color: white;">Reference</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </center>
+                    <br>
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+
+                        <div role="tabpanel" class="tab-pane" id="generalpartner">
+                            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingTwo">
+                                        <h4 class="panel-title" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+
+                                            <p class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false"
+                                                aria-controls="collapseTwo">
+                                                <span class="glyphicon glyphicon-plus" style="padding-right: 10px;"> </span> What is a Posta Partner?
+                                            </p>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                        <div class="panel-body">
+                                            Posta Partners have access to the Posta platform in order to receive local courier jobs. Posta Partners are independent contractors.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingTwo">
+                                        <h4 class="panel-title" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsethree"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+
+                                            <p class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsethree" aria-expanded="false"
+                                                aria-controls="collapsethree">
+                                                <span class="glyphicon glyphicon-plus" style="padding-right: 10px;"> </span> Why become a Posta Partner?
+                                            </p>
+                                        </h4>
+                                    </div>
+                                    <div id="collapsethree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                        <div class="panel-body">
+                                            Being a Posta Partner allows you to earn money in your free time by taking on courier jobs. Posta operates in concentrated
+                                            areas, and limit users from sending or receiving things on the platform to under
+                                            25 pounds as well as requiring the contents to fit inside of a standard sized
+                                            mike crate. This gives Posta Partners the ability to complete multiple jobs in
+                                            short amounts of time, which means higher earnings. We are here to support Posta
+                                            Partners complete jobs the right way, and are constantly working on platform
+                                            updates to maximize your earnings.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingTwo">
+                                        <h4 class="panel-title" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#3" aria-expanded="false"
+                                            aria-controls="3">
+
+                                            <p class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#3" aria-expanded="false" aria-controls="3">
+                                                <span class="glyphicon glyphicon-plus" style="padding-right: 10px;"> </span> How do I become a Posta Partner?
+                                            </p>
+                                        </h4>
+                                    </div>
+                                    <div id="3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                        <div class="panel-body">
+                                            Click
+                                            <a href="http://posta-technologies.breezy.hr/p/ca5738b267fd-posta-partner-courier" target="_blank">here</a>. Once you submit your preliminary information, our team will get back
+                                            to you as soon as possible with the next steps. This will include filling out
+                                            an informational form, our team running a background check, and then reviewing
+                                            the onboarding as well as terms documents. You set up your own payment information
+                                            within the app using Stripe's industry leading portal.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingTwo">
+                                        <h4 class="panel-title" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#4" aria-expanded="false"
+                                            aria-controls="4">
+
+                                            <p class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#4" aria-expanded="false" aria-controls="4">
+                                                <span class="glyphicon glyphicon-plus" style="padding-right: 10px;"> </span> What are the requirements to become a Posta Partner?
+                                            </p>
+                                        </h4>
+                                    </div>
+                                    <div id="4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                        <div class="panel-body">
+                                            All are welcome to apply. We require potential Partners to pass a background check. Contractors who have experience on other
+                                            similar platforms are preferred, however, this is not necessary. Posta values
+                                            contractors who are hard working, patient, and honest. </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingTwo">
+                                        <h4 class="panel-title" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#5" aria-expanded="false"
+                                            aria-controls="5">
+
+                                            <p class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#5" aria-expanded="false" aria-controls="5">
+                                                <span class="glyphicon glyphicon-plus" style="padding-right: 10px;"> </span> What are the steps in the application process?
+                                            </p>
+                                        </h4>
+                                    </div>
+                                    <div id="5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                        <div class="panel-body">
+                                            Fill out the Posta Partner application. When our team receives it, they will send you an email back with an informational
+                                            to complete. Download and complete the informational on your computer. Send it
+                                            back as a reply to the email you received it from. Within a few days our team
+                                            will have reviewed your informational, and schedule a 10 minute phone screen.
+                                            Once this is complete, our team will either proceed forward with a background
+                                            check or notify you that we were unable to proceed. The background check will
+                                            be emailed to you, and if everything checks out, you will gain access to the
+                                            Posta Partner app to start earning. The entire process can take anywhere from
+                                            2 to 5 business days. </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingTwo">
+                                        <h4 class="panel-title" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#6" aria-expanded="false"
+                                            aria-controls="6">
+
+                                            <p class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#6" aria-expanded="false" aria-controls="6">
+                                                <span class="glyphicon glyphicon-plus" style="padding-right: 10px;"> </span> How long does the application process take?
+                                            </p>
+                                        </h4>
+                                    </div>
+                                    <div id="6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                        <div class="panel-body">
+                                            The entire process can take anywhere from 2 to 5 business days. </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingTwo">
+                                        <h4 class="panel-title" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#71" aria-expanded="false"
+                                            aria-controls="71">
+
+                                            <p class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#71" aria-expanded="false" aria-controls="71">
+                                                <span class="glyphicon glyphicon-plus" style="padding-right: 10px;"> </span> What does the background check screen?
+                                            </p>
+                                        </h4>
+                                    </div>
+                                    <div id="71" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                        <div class="panel-body">
+                                            In order to ensure the highest quality of Posta Partners for a world class user experience, Posta utilizes industry standard
+                                            procedures. The background check will screen out applicants who have a history
+                                            of violent or sexual crimes, a recent history of a poor driving record, and recent
+                                            crime convictions involving dishonesty. </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingTwo">
+                                        <h4 class="panel-title" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#8" aria-expanded="false"
+                                            aria-controls="8">
+
+                                            <p class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#8" aria-expanded="false" aria-controls="8">
+                                                <span class="glyphicon glyphicon-plus" style="padding-right: 10px;"> </span> Does Posta provide support for Posta Partners?
+                                            </p>
+                                        </h4>
+                                    </div>
+                                    <div id="8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                        <div class="panel-body">
+                                            Yes! We are here to make sure jobs are completed the right way. Posta will provide reference materials and is always an email
+                                            away for any questions or concerns. </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingTwo">
+                                        <h4 class="panel-title" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#9" aria-expanded="false"
+                                            aria-controls="9">
+
+                                            <p class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#9" aria-expanded="false" aria-controls="9">
+                                                <span class="glyphicon glyphicon-plus" style="padding-right: 10px;"> </span> Is there an orientation for new Posta Partners?
+                                            </p>
+                                        </h4>
+                                    </div>
+                                    <div id="9" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                        <div class="panel-body">
+                                            There is not a formal in person orientation, however, there are orientation guides that we will send you so you can get familiar
+                                            with the platform. We may periodically give you a call or email to see how things
+                                            are going.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mobile App Tabs Start Here -->
+                        <div role="tabpanel" class="tab-pane" id="messages">
+                            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingTwo">
+                                        <h4 class="panel-title" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#100" aria-expanded="false"
+                                            aria-controls="100">
+
+                                            <p class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#100" aria-expanded="false" aria-controls="100">
+                                                <span class="glyphicon glyphicon-plus" style="padding-right: 10px;"> </span> How to log on to receive jobs.
+                                            </p>
+                                        </h4>
+                                    </div>
+                                    <div id="100" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                        <div class="embed-responsive embed-responsive-4by3">
+                                            <iframe width="400" height="215" src="https://www.youtube.com/embed/v67TuCEv3Vg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingTwo">
+                                        <h4 class="panel-title" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#101" aria-expanded="false"
+                                            aria-controls="101">
+
+                                            <p class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#101" aria-expanded="false" aria-controls="101">
+                                                <span class="glyphicon glyphicon-plus" style="padding-right: 10px;"> </span> Completing a job.
+                                            </p>
+                                        </h4>
+                                    </div>
+                                    <div id="101" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                        <div class="embed-responsive embed-responsive-4by3">
+                                            <iframe width="400" height="215" src="https://www.youtube.com/embed/cWX_DyW_mew" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingTwo">
+                                        <h4 class="panel-title" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#102" aria-expanded="false"
+                                            aria-controls="102">
+
+                                            <p class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#102" aria-expanded="false" aria-controls="102">
+                                                <span class="glyphicon glyphicon-plus" style="padding-right: 10px;"> </span> Contacting the sender or recipient.
+                                            </p>
+                                        </h4>
+                                    </div>
+                                    <div id="102" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                        <div class="embed-responsive embed-responsive-4by3">
+                                            <iframe width="400" height="215" src="https://www.youtube.com/embed/_iT_A-Cur9Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingTwo">
+                                        <h4 class="panel-title" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#103" aria-expanded="false"
+                                            aria-controls="103">
+
+                                            <p class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#103" aria-expanded="false" aria-controls="103">
+                                                <span class="glyphicon glyphicon-plus" style="padding-right: 10px;"> </span> How to view past trips.
+                                            </p>
+                                        </h4>
+                                    </div>
+                                    <div id="103" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                        <div class="embed-responsive embed-responsive-4by3">
+                                            <iframe width="400" height="215" src="https://www.youtube.com/embed/WR9NXcdg3vM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <br>
+                    <br>
+                    <br>
+
+
+
+                    <!-- close main container -->
+            </main>
+            <!-- Include the Partial for the bottom finishing the html (Body close tag is in bottom.ejs)-->
+            <%- include('partials/bottomBarPartners') -%>
+
+                <!-- Include the Partial for the bottom finishing the html (Body close tag is in bottom.ejs)-->
+                <%- include('partials/bottom') -%>

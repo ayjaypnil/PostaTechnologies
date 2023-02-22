@@ -1,0 +1,829 @@
+<!-- Include the Partial for the header including all of the necessary links -->
+<%- include('partials/header') -%>
+
+    <style>
+        #customerSupportPageHeroImage {
+            background-image: url("/images/partnerSupportCenterHero.png");
+            background-color: white;
+            height: 70vw;
+            width: 100%;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            padding: 0px !important;
+            display: block;
+            margin: 0px !important;
+            overflow: hidden;
+        }
+
+        #supportContentDiv {
+            margin: 5vw 0;
+        }
+
+        /* For  Support Icons  */
+
+        .customerSupportIcon {
+            height: 3vw;
+            width: auto;
+        }
+
+        /* For Information Panels, before they are collapsed */
+
+        .panel-default>.panel-heading {
+            background-color: #d2d4ff;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* For the actual information once the panel is expanded */
+
+        .panel-default>.panel-heading+.panel-collapse>.panel-body {
+            font-family: 'Arimo', sans-serif;
+            font-size: 4vw;
+            color: rgba(67, 67, 67, 0.557);
+        }
+
+        .textMDA {
+            font-family: 'Poppins', sans-serif;
+            color: white;
+            border: solid 1px;
+            background-color: #b7eafe;
+            padding: 1vw;
+        }
+
+        @media only screen and (max-width: 400px) {
+            .customerSupportIcon {
+                height: 7vw;
+                width: auto;
+                padding-bottom: 1vw;
+            }
+        }
+
+        @media only screen and (min-width: 401px) and (max-width: 767px) {
+            .customerSupportIcon {
+                height: 6vw;
+                width: auto;
+                padding-bottom: 1vw;
+            }
+
+        }
+    </style>
+
+    <!-- Head Close -->
+    </head>
+    <!-- Body Start -->
+
+    <body>
+        <!-- Include the Partial for the preloader  -->
+        <%- include('partials/preloader') -%>
+            <!-- Include the Partial for the topbar (regular)-->
+            <%- include('partials/topBar') -%>
+
+
+                <div class="" id="customerSupportPageHeroImage">
+
+                </div>
+
+
+
+                <div class="container-fluid" id="supportContentDiv">
+                    <div class="row ">
+                        <center>
+                            <div class="col-xs-4">
+                                <p class="well" style="background:#d2d4ff">
+                                    <a href="#generalpartner" aria-controls="generalpartner" role="tab" data-toggle="tab" style="color: white;">
+                                        <span>
+                                            <img class="customerSupportIcon" src="/images/information.png">
+                                        </span>
+                                        <br> General
+
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="col-xs-4">
+                                <p class="well" style="background:#d2d4ff">
+                                    <a href="#messages" aria-controls="messages" role="tab" data-toggle="tab" style="color: white;">
+                                        <span>
+                                            <img class="customerSupportIcon" src="/images/supportIcon.png">
+                                        </span>
+                                        <br> Technical
+                                    </a>
+                                </p>
+                            </div>
+
+                            <div class="col-xs-4">
+                                <p class="well" style="background:#d2d4ff">
+                                    <a href="#settings" aria-controls="settings" role="tab" data-toggle="tab" style="color: white;">
+                                        <span>
+                                            <img class="customerSupportIcon" src="/images/mobile.png">
+                                        </span>
+                                        <br> Reference
+                                    </a>
+                                </p>
+                            </div>
+                        </center>
+                    </div>
+                </div>
+                <br>
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <!-- General tab accordians -->
+                    <div role="tabpanel" class="tab-pane" id="generalpartner">
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTwo">
+                                    <h4 class="panel-title" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"
+                                        aria-expanded="false" aria-controls="collapseTwo">
+
+                                        <p class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false"
+                                            aria-controls="collapseTwo">
+                                            <span class="glyphicon glyphicon-plus" style="padding-right: 10px;"> </span> What is a Posta Partner?
+                                        </p>
+                                    </h4>
+                                </div>
+                                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="panel-body">
+                                        Posta Partners have access to the Posta platform in order to receive local courier jobs. Posta Partners are independent contractors.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTwo">
+                                    <h4 class="panel-title" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsethree"
+                                        aria-expanded="false" aria-controls="collapseTwo">
+
+                                        <p class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsethree" aria-expanded="false"
+                                            aria-controls="collapsethree">
+                                            <span class="glyphicon glyphicon-plus" style="padding-right: 10px;"> </span> Why become a Posta Partner?
+                                        </p>
+                                    </h4>
+                                </div>
+                                <div id="collapsethree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="panel-body">
+                                        Being a Posta Partner allows you to earn money in your free time by taking on courier jobs. Posta operates in concentrated
+                                        areas, and limit users from sending or receiving things on the platform to under
+                                        25 pounds as well as requiring the contents to fit inside of a standard sized mike
+                                        crate. This gives Posta Partners the ability to complete multiple jobs in short amounts
+                                        of time, which means higher earnings. We are here to support Posta Partners complete
+                                        jobs the right way, and are constantly working on platform updates to maximize your
+                                        earnings.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTwo">
+                                    <h4 class="panel-title" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#3" aria-expanded="false"
+                                        aria-controls="3">
+
+                                        <p class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#3" aria-expanded="false" aria-controls="3">
+                                            <span class="glyphicon glyphicon-plus" style="padding-right: 10px;"> </span> How do I become a Posta Partner?
+                                        </p>
+                                    </h4>
+                                </div>
+                                <div id="3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="panel-body">
+                                        Click
+                                        <a href="http://posta-technologies.breezy.hr/p/ca5738b267fd-posta-partner-courier" target="_blank">here</a>. Once you submit your preliminary information, our team will get back to
+                                        you as soon as possible with the next steps. This will include filling out an informational
+                                        form, our team running a background check, and then reviewing the onboarding as well
+                                        as terms documents. You set up your own payment information within the app using
+                                        Stripe's industry leading portal.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTwo">
+                                    <h4 class="panel-title" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#4" aria-expanded="false"
+                                        aria-controls="4">
+
+                                        <p class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#4" aria-expanded="false" aria-controls="4">
+                                            <span class="glyphicon glyphicon-plus" style="padding-right: 10px;"> </span> What are the requirements to become a Posta Partner?
+                                        </p>
+                                    </h4>
+                                </div>
+                                <div id="4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="panel-body">
+                                        All are welcome to apply. We require potential Partners to pass a background check. Contractors who have experience on other
+                                        similar platforms are preferred, however, this is not necessary. Posta values contractors
+                                        who are hard working, patient, and honest. </div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTwo">
+                                    <h4 class="panel-title" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#5" aria-expanded="false"
+                                        aria-controls="5">
+
+                                        <p class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#5" aria-expanded="false" aria-controls="5">
+                                            <span class="glyphicon glyphicon-plus" style="padding-right: 10px;"> </span> What are the steps in the application process?
+                                        </p>
+                                    </h4>
+                                </div>
+                                <div id="5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="panel-body">
+                                        Fill out the Posta Partner application. When our team receives it, they will send you an email back with an informational
+                                        to complete. Download and complete the informational on your computer. Send it back
+                                        as a reply to the email you received it from. Within a few days our team will have
+                                        reviewed your informational, and schedule a 10 minute phone screen. Once this is
+                                        complete, our team will either proceed forward with a background check or notify
+                                        you that we were unable to proceed. The background check will be emailed to you,
+                                        and if everything checks out, you will gain access to the Posta Partner app to start
+                                        earning. The entire process can take anywhere from 2 to 5 business days. </div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTwo">
+                                    <h4 class="panel-title" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#6" aria-expanded="false"
+                                        aria-controls="6">
+
+                                        <p class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#6" aria-expanded="false" aria-controls="6">
+                                            <span class="glyphicon glyphicon-plus" style="padding-right: 10px;"> </span> How long does the application process take?
+                                        </p>
+                                    </h4>
+                                </div>
+                                <div id="6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="panel-body">
+                                        The entire process can take anywhere from 2 to 5 business days. </div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTwo">
+                                    <h4 class="panel-title" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#71" aria-expanded="false"
+                                        aria-controls="71">
+
+                                        <p class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#71" aria-expanded="false" aria-controls="71">
+                                            <span class="glyphicon glyphicon-plus" style="padding-right: 10px;"> </span> What does the background check screen?
+                                        </p>
+                                    </h4>
+                                </div>
+                                <div id="71" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="panel-body">
+                                        In order to ensure the highest quality of Posta Partners for a world class user experience, Posta utilizes industry standard
+                                        procedures. The background check will screen out applicants who have a history of
+                                        violent or sexual crimes, a recent history of a poor driving record, and recent crime
+                                        convictions involving dishonesty. </div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTwo">
+                                    <h4 class="panel-title" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#8" aria-expanded="false"
+                                        aria-controls="8">
+
+                                        <p class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#8" aria-expanded="false" aria-controls="8">
+                                            <span class="glyphicon glyphicon-plus" style="padding-right: 10px;"> </span> Does Posta provide support for Posta Partners?
+                                        </p>
+                                    </h4>
+                                </div>
+                                <div id="8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="panel-body">
+                                        Yes! We are here to make sure jobs are completed the right way. Posta will provide reference materials and is always an email
+                                        away for any questions or concerns. </div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTwo">
+                                    <h4 class="panel-title" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#9" aria-expanded="false"
+                                        aria-controls="9">
+
+                                        <p class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#9" aria-expanded="false" aria-controls="9">
+                                            <span class="glyphicon glyphicon-plus" style="padding-right: 10px;"> </span> Is there an orientation for new Posta Partners?
+                                        </p>
+                                    </h4>
+                                </div>
+                                <div id="9" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="panel-body">
+                                        There is not a formal in person orientation, however, there are orientation guides that we will send you so you can get familiar
+                                        with the platform. We may periodically give you a call or email to see how things
+                                        are going.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Mobile App Tabs Start Here -->
+                    <div role="tabpanel" class="tab-pane" id="messages">
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTwo">
+                                    <h4 class="panel-title" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#100" aria-expanded="false"
+                                        aria-controls="100">
+
+                                        <p class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#100" aria-expanded="false" aria-controls="100">
+                                            <span class="glyphicon glyphicon-plus" style="padding-right: 10px;"> </span> How to log on to receive jobs.
+                                        </p>
+                                    </h4>
+                                </div>
+                                <div id="100" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="embed-responsive embed-responsive-4by3">
+                                        <iframe width="400" height="215" src="https://www.youtube.com/embed/v67TuCEv3Vg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTwo">
+                                    <h4 class="panel-title" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#101" aria-expanded="false"
+                                        aria-controls="101">
+
+                                        <p class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#101" aria-expanded="false" aria-controls="101">
+                                            <span class="glyphicon glyphicon-plus" style="padding-right: 10px;"> </span> Completing a job.
+                                        </p>
+                                    </h4>
+                                </div>
+                                <div id="101" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="embed-responsive embed-responsive-4by3">
+                                        <iframe width="400" height="215" src="https://www.youtube.com/embed/cWX_DyW_mew" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTwo">
+                                    <h4 class="panel-title" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#102" aria-expanded="false"
+                                        aria-controls="102">
+
+                                        <p class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#102" aria-expanded="false" aria-controls="102">
+                                            <span class="glyphicon glyphicon-plus" style="padding-right: 10px;"> </span> Contacting the sender or recipient.
+                                        </p>
+                                    </h4>
+                                </div>
+                                <div id="102" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="embed-responsive embed-responsive-4by3">
+                                        <iframe width="400" height="215" src="https://www.youtube.com/embed/_iT_A-Cur9Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTwo">
+                                    <h4 class="panel-title" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#103" aria-expanded="false"
+                                        aria-controls="103">
+
+                                        <p class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#103" aria-expanded="false" aria-controls="103">
+                                            <span class="glyphicon glyphicon-plus" style="padding-right: 10px;"> </span> How to view past trips.
+                                        </p>
+                                    </h4>
+                                </div>
+                                <div id="103" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="embed-responsive embed-responsive-4by3">
+                                        <iframe width="400" height="215" src="https://www.youtube.com/embed/WR9NXcdg3vM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <!-- Reference Tabs Start Here -->
+                    <div role="tabpanel" class="tab-pane" id="settings">
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTwo">
+                                    <h4 class="panel-title" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#11" aria-expanded="false"
+                                        aria-controls="11">
+
+                                        <p class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#11" aria-expanded="false" aria-controls="11">
+                                            <span class="glyphicon glyphicon-plus" style="padding-right: 10px;"> </span> I just completed my first job, what’s next?
+                                        </p>
+                                    </h4>
+                                </div>
+                                <div id="11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="panel-body">
+                                        Awesome, great work! When there is another job in your area that is requested by a u ser on the Posta mobile app, nearby
+                                        Posta Partners will be notified the same way a s the first job! </div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTwo">
+                                    <h4 class="panel-title" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#12" aria-expanded="false"
+                                        aria-controls="12">
+
+                                        <p class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#12" aria-expanded="false" aria-controls="12">
+                                            <span class="glyphicon glyphicon-plus" style="padding-right: 10px;"> </span> Am I required to log on at specific times or for specific time periods?
+                                        </p>
+                                    </h4>
+                                </div>
+                                <div id="12" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="panel-body">
+                                        Nope! Posta Partners are free to log on and off the Post a Partner mobile application as they see fit . However, the best
+                                        way to get jobs is to stay consistent. Peak h ours are 8a m to 8pm, which will offer
+                                        the highest earning potential. However, Posta Partners are free to log on and take
+                                        jobs at time s that best fit their schedule.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTwo">
+                                    <h4 class="panel-title" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#13" aria-expanded="false"
+                                        aria-controls="13">
+
+                                        <p class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#13" aria-expanded="false" aria-controls="13">
+                                            <span class="glyphicon glyphicon-plus" style="padding-right: 10px;"> </span> I have completed a couple jobs this week, how do I get paid?
+                                        </p>
+                                    </h4>
+                                </div>
+                                <div id="13" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="panel-body">
+                                        After completing a job, we wo rk with Stripe to verify all of the payment details for both Posta Partners as well as users.
+                                        When your account is credited after a job, we send a request to have the funds released
+                                        to your provided account. This process typically takes between 3 - 5 busines s days.
+                                        As always, if you have any questions or concerns, please contact us at support@postatechnologies.com.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTwo">
+                                    <h4 class="panel-title" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#14" aria-expanded="false"
+                                        aria-controls="14">
+
+                                        <p class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#14" aria-expanded="false" aria-controls="14">
+                                            <span class="glyphicon glyphicon-plus" style="padding-right: 10px;"> </span> I have an issue with a job, what do I do?
+                                        </p>
+                                    </h4>
+                                </div>
+                                <div id="14" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="panel-body">
+                                        We understand that ‘stuff’ happens. Patience is a virtue, and it is necessary to promptly resolve any issues while on a job.
+                                        Communication is paramount. Stay calm and remember that you are the expert here.
+                                        <ul>
+                                            <li>The first step is to contact the sender or the recipient directly regarding the
+                                                issue. </li>
+                                            <li>If you are having trouble connecting with either of them, just give them a phone
+                                                call or text message.</li>
+                                            <li>If you are waiting more than 5 - 7 minutes for the sender or the receiver, contact
+                                                them.
+                                            </li>
+                                            <li>If the issue persists, please contact us. </li>
+                                            <li>If you are having an issue with the application, please contact Posta at support@posta
+                                                technologies.com.
+                                            </li>
+                                            In your email, please provide the job number, your Posta Partner information, and the issue you are expe riencing. We will
+                                            promptly get in touch with you to resolve the matter.
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTwo">
+                                    <h4 class="panel-title" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#15" aria-expanded="false"
+                                        aria-controls="15">
+
+                                        <p class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#15" aria-expanded="false" aria-controls="15">
+                                            <span class="glyphicon glyphicon-plus" style="padding-right: 10px;"> </span> Something happened and I have an undelivered item, what do I do with
+                                            it?
+                                        </p>
+                                    </h4>
+                                </div>
+                                <div id="15" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="panel-body">
+                                        Stay calm, and be patient. The first step is to contact and communicate with the sender and receiver if you cannot complete
+                                        a job and have the item or package. If that does not resolve the issue, contact us
+                                        immediately. Hold onto the items until either the sender, receiver, or Posta contact
+                                        you back. </div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTwo">
+                                    <h4 class="panel-title" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#16" aria-expanded="false"
+                                        aria-controls="16">
+
+                                        <p class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#16" aria-expanded="false" aria-controls="16">
+                                            <span class="glyphicon glyphicon-plus" style="padding-right: 10px;"> </span> Is it normal for the Posta Partner mobile application to look different?
+                                        </p>
+                                    </h4>
+                                </div>
+                                <div id="16" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="panel-body">
+                                        Our tech team is constantly updating our applications. We strive to be an industry leader, and this requires getting Po sta
+                                        Partners all of the tools that they need. If the Posta Partner application looks
+                                        a bit different, it is because we have made an update. If you have any questions
+                                        about an update, please feel free to contact us. We can walk you through any of the
+                                        questi ons you may have.</div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTwo">
+                                    <h4 class="panel-title" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#17" aria-expanded="false"
+                                        aria-controls="17">
+
+                                        <p class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#17" aria-expanded="false" aria-controls="17">
+                                            <span class="glyphicon glyphicon-plus" style="padding-right: 10px;"> </span> I see multiple Posta Technologies, Inc. applications, which one do I
+                                            use?
+                                        </p>
+                                    </h4>
+                                </div>
+                                <div id="17" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="panel-body">
+                                        There is an app for users, and there is an app for Posta Partners. The Posta mobile application is for users that would like
+                                        to send or receive things. The Posta Partners application is for you. It is accessible
+                                        only after successfully applying and being accepted. You can use Posta to send and
+                                        receive things on your time when you are not on a job as a Posta Partner!
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTwo">
+                                    <h4 class="panel-title" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#18" aria-expanded="false"
+                                        aria-controls="18">
+
+                                        <p class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#18" aria-expanded="false" aria-controls="18">
+                                            <span class="glyphicon glyphicon-plus" style="padding-right: 10px;"> </span> I am not comfortable taking a particular job, do I have to take it ?
+                                        </p>
+                                    </h4>
+                                </div>
+                                <div id="18" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="panel-body">
+                                        The safety and security of our Posta Partners as well as users is the top priority. Contact us immediately at support@postatechnologies.com.
+                                        Include the job details, your Posta Partner details, as well as a detailed message
+                                        as to what h appened. We strongly recommend that you do not put yourself in a compromised
+                                        position.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTwo">
+                                    <h4 class="panel-title" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#19" aria-expanded="false"
+                                        aria-controls="19">
+
+                                        <p class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#19" aria-expanded="false" aria-controls="19">
+                                            <span class="glyphicon glyphicon-plus" style="padding-right: 10px;"> </span> Weather has delayed my job, what do I do?
+                                        </p>
+                                    </h4>
+                                </div>
+                                <div id="19" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="panel-body">
+                                        Your safety is the first priority. Depending on which market you are a Posta Partner in, you may have a run in with Mother
+                                        Na ture . Communicate with the sender and receiver to let them know about the delay.
+                                        If there are additional issues, please contact us.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTwo">
+                                    <h4 class="panel-title" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#20" aria-expanded="false"
+                                        aria-controls="20">
+
+                                        <p class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#20" aria-expanded="false" aria-controls="20">
+                                            <span class="glyphicon glyphicon-plus" style="padding-right: 10px;"> </span> What happens if I cannot complete a job after accepting it?
+                                        </p>
+                                    </h4>
+                                </div>
+                                <div id="20" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="panel-body">
+                                        This is a situation we hope to avoid. We can do so by working carefully together. Unfinished jobs significantly harm the
+                                        user experience and reputation of the Posta platform. Once accepted, a job should
+                                        not go unfinished, unless there are extreme circumstances. An extreme circumstance
+                                        may be an accident or you are p hysically injured while on the job and unable to
+                                        com plete it. Please contact us immediately as well as contact the sender and receiver
+                                        prior to cancelling.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTwo">
+                                    <h4 class="panel-title" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#21" aria-expanded="false"
+                                        aria-controls="21">
+
+                                        <p class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#21" aria-expanded="false" aria-controls="21">
+                                            <span class="glyphicon glyphicon-plus" style="padding-right: 10px;"> </span>Does Posta provide me with any equipment?
+                                        </p>
+                                    </h4>
+                                </div>
+                                <div id="21" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="panel-body">
+                                        Posta provides software and updates it periodically for Posta Partners. We work hard to make sure that the Posta Partner
+                                        mobile application is running as best as it can in order to maximize your earnings.
+                                        As far as physical equipment, due to the na ture of the relationship between Posta
+                                        and Posta Partners, Posta cannot provide essential physical equipment. However, Posta
+                                        may send Posta Partners branded merchandise such as carrying bags or various similar
+                                        items , but you are not required to use them.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTwo">
+                                    <h4 class="panel-title" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#22" aria-expanded="false"
+                                        aria-controls="22">
+
+                                        <p class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#22" aria-expanded="false" aria-controls="22">
+                                            <span class="glyphicon glyphicon-plus" style="padding-right: 10px;"> </span> Can I use a scooter, bike, or go by foot?
+                                        </p>
+                                    </h4>
+                                </div>
+                                <div id="22" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="panel-body">
+                                        Our Partners are free to operate in their cars, on a bike, using a scooter, or simply walking. We recommend having a carrying
+                                        pack or rack if you are not using a car because jobs may entail delivering things
+                                        up to 25 pounds and as large as a standard milk crate.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTwo">
+                                    <h4 class="panel-title" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#23" aria-expanded="false"
+                                        aria-controls="23">
+
+                                        <p class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#23" aria-expanded="false" aria-controls="23">
+                                            <span class="glyphicon glyphicon-plus" style="padding-right: 10px;"> </span> What if there aren’t any jobs coming in?
+                                        </p>
+                                    </h4>
+                                </div>
+                                <div id="23" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="panel-body">
+                                        We hope that this is never the case. However, after our initial launch or after opening up operations in new markets, jobs
+                                        may come in slower th an usual. Please have patience as we grow tog ether.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTwo">
+                                    <h4 class="panel-title" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#24" aria-expanded="false"
+                                        aria-controls="24">
+
+                                        <p class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#24" aria-expanded="false" aria-controls="24">
+                                            <span class="glyphicon glyphicon-plus" style="padding-right: 10px;"> </span> Can I take jobs on multiple mobile platforms including jobs as a Posta
+                                            Partner?
+                                        </p>
+                                    </h4>
+                                </div>
+                                <div id="24" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="panel-body">
+                                        Yes, you can run our application simultaneously with others. However, if a job comes in and you accept it, you have a duty
+                                        to complete the job on the Posta platform in a timely manner. Abuse of this may result
+                                        in your access to the Posta Partner mobile application being revoked.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTwo">
+                                    <h4 class="panel-title" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#25" aria-expanded="false"
+                                        aria-controls="25">
+
+                                        <p class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#25" aria-expanded="false" aria-controls="25">
+                                            <span class="glyphicon glyphicon-plus" style="padding-right: 10px;"> </span> Must I follow a specified route to the sender or receiver?
+                                        </p>
+                                    </h4>
+                                </div>
+                                <div id="25" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="panel-body">
+                                        Nope! A point of emphasis for Posta is freedom to decide. Everyone has a different go to map applic ation, feel free to use
+                                        the one you are most comfortable with. The most commonly used applications are Google
+                                        Maps as well as Waze.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTwo">
+                                    <h4 class="panel-title" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#26" aria-expanded="false"
+                                        aria-controls="26">
+
+                                        <p class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#26" aria-expanded="false" aria-controls="26">
+                                            <span class="glyphicon glyphicon-plus" style="padding-right: 10px;"> </span> How should I transport items?
+                                        </p>
+                                    </h4>
+                                </div>
+                                <div id="26" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="panel-body">
+                                        You are free to transport items as you see fit. You are the expert here. Just keep in mind t hat you need to keep the items
+                                        or package safe and in proper care. For this reason, we recommend using tools such
+                                        as waterproof covers and racks for both bicycle as well as scooters . To make it
+                                        easier for Posta Partners, we only allow users to send things that are un der 25
+                                        pounds and the total contents fit in a single standard sized milk crate.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTwo">
+                                    <h4 class="panel-title" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#27" aria-expanded="false"
+                                        aria-controls="27">
+
+                                        <p class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#27" aria-expanded="false" aria-controls="27">
+                                            <span class="glyphicon glyphicon-plus" style="padding-right: 10px;"> </span> Weather has delayed my job, what do I do?
+                                        </p>
+                                    </h4>
+                                </div>
+                                <div id="27" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="panel-body">
+                                        Your safety is the first priority. Depending on which market you are a Posta Partner in, you may have a run in with Mother
+                                        Na ture . Communicate with the sender and receiver to let them know about the delay.
+                                        If there are additional issues, please contact us.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTwo">
+                                    <h4 class="panel-title" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#28" aria-expanded="false"
+                                        aria-controls="28">
+
+                                        <p class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#28" aria-expanded="false" aria-controls="28">
+                                            <span class="glyphicon glyphicon-plus" style="padding-right: 10px;"> </span> How does Posta recommend doing jobs?
+                                        </p>
+                                    </h4>
+                                </div>
+                                <div id="28" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="panel-body">
+                                        In order to maximize your earnings per hour, the goal is to complete as many jobs as possible. In order to help you achieve
+                                        this, we have a few tips. You are not required to follow any of them; these tips
+                                        are simply for your benefit as well as our users.
+                                        <ul>
+                                            <li>Be a good person. No really, be nice. It goes a long way.</li>
+                                            <li>Be efficient and know your market. If you are planning to log on for a few hours,
+                                                log on when you anticipate heavy volume. Furthermore, know the market well
+                                                enough to use routes that keep you out of stressful traffic.</li>
+                                            <li> Have a system in place. From accepting a job to entering the security code in
+                                                order to complete the job, have a plan to get that item from point A to point
+                                                B.
+                                            </li>
+                                            <li>Use your bike in congested cities. Use your car when the weather calls for it.
+                                                Go on foot in very congested cities that typically send jobs requiring going
+                                                in and out of nearby buildings. </li>
+                                            <li>Communicate. We cannot str ess how helpful clear and patient communication is.
+                                                Posta Partners are the experts here.</li>
+                                            <li>Don’t lose your cool. There are times when things may not go to plan, but these
+                                                are the times that test us most. Stay calm and communicate through any adversity.</li>
+                                        </ul>Contact us when you have an issue, we are here to help!
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+                <br>
+                <br>
+                <br>
+                <div class="container-fluid" style="margin-top: 10vw;">
+                    <div class="row">
+                        <div class="col-xs-2">
+
+                        </div>
+                        <div class="col-xs-4 btn btn-sm">
+                            <center>
+                                <a href="/postapartners">
+                                    <p class="textMDA">Partner Home</p>
+                                </a>
+                            </center>
+                        </div>
+                        <div class="col-xs-4 btn btn-sm">
+                            <center>
+                                <a href="/support">
+                                    <p class="textMDA">Support Home</p>
+                                </a>
+                            </center>
+                        </div>
+                        <div class="col-xs-2">
+
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+
+
+                <!-- Include the Partial for the bottom finishing the html (Body close tag is in bottom.ejs)-->
+                <%- include('partials/bottomBarPartners') -%>
+
+                    <!-- Include the Partial for the bottom finishing the html (Body close tag is in bottom.ejs)-->
+                    <%- include('partials/bottom') -%>

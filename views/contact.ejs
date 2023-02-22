@@ -1,0 +1,95 @@
+<!-- Include the Partial for the header including all of the necessary links -->
+<%- include('partials/header') -%>
+
+    <style>
+        form {
+            border: 1px solid rgb(179, 192, 211);
+            padding: 5%;
+            margin: 5%;
+            background: #89b9f2;
+            /* background: linear-gradient(90deg, rgba(115, 122, 234, 1) 0%, rgba(38, 212, 222, 1) 100%); */
+        }
+
+        #submitButtonContactPage {
+            background: #52b3f4;
+            color: white;
+            border: 1px solid white;
+        }
+
+        .glyphicon {
+            color: white;
+        }
+
+        .form-control {
+            width: 80%;
+        }
+
+        .form-group {
+            margin: 3px;
+        }
+    </style>
+
+    <!-- Head Close -->
+    </head>
+
+    <!-- Body Start -->
+
+    <body>
+        <!-- Include the Partial for the preloader  -->
+        <%- include('partials/preloader') -%>
+            <!-- Include the Partial for the topbar (regular)-->
+            <%- include('partials/topBar') -%>
+
+                <div class="container">
+                    <center>
+
+                        <br>
+                        <form id="contact-form" method="POST" action="/contactemail">
+                            <br>
+                            <div class="form-group">
+                                <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                                <!-- <small id="emailHelp" class="form-text text-muted">Name</small> -->
+                                <input type="text" class="form-control" name="name" id="contactNameFrom" aria-describedby="emailHelp" placeholder="Name">
+
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                                <input type="email" class="form-control" name="email" id="contactEmailFrom" aria-describedby="emailHelp" placeholder="Email">
+                            </div>
+
+                            <br>
+
+                            <div class="form-group">
+                                <span class="glyphicon glyphicon-tags" aria-hidden="true"></span>
+                                <input type="text" class="form-control" name="subject" id="contactSubjectFrom" aria-describedby="subjectHelp" placeholder="Subject">
+
+                            </div>
+
+                            <br>
+
+                            <div class="form-group">
+                                <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+                                <textarea type="text" class="form-control" name="message" id="contactMessageFrom" aria-describedby="subjectHelp" placeholder="Message"></textarea>
+                            </div>
+
+                            <br>
+                            <input class="btn btn-primary" type="submit" id="submitButtonContactPage" value="Send">
+                            <br>
+                        </form>
+                        <br>
+                        <br>
+                        <br>
+                    </center>
+
+                </div>
+
+
+
+
+
+                <!-- Include the Partial for the bottom finishing the html (Body close tag is in bottom.ejs)-->
+                <%- include('partials/bottomBarHome') -%>
+
+                    <!-- Include the Partial for the bottom finishing the html (Body close tag is in bottom.ejs)-->
+                    <%- include('partials/bottom') -%>

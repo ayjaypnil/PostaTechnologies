@@ -1,0 +1,502 @@
+<!-- Include the Partial for the header including all of the necessary links -->
+<%- include('partials/header') -%>
+
+    <style>
+        /* Home Page, background image under topBar */
+
+        #homePagePromoBackground {
+            background-image: url("/images/background2x 2.png");
+            background-color: rgb(255, 255, 255);
+            height: 70vw;
+            width: 100%;
+            /* background-position: center center; */
+            background-repeat: no-repeat;
+            background-size: contain;
+            padding: 0px !important;
+            display: block;
+            margin: 0px !important;
+            overflow: hidden;
+        }
+
+        a {
+            text-decoration: none !important;
+        }
+
+
+
+        h1 {
+            border-bottom: solid 1px black;
+            margin-left: 10%;
+            margin-right: 10%;
+
+        }
+
+        #getTheAppDiv {
+            display: flex;
+            justify-content: center;
+        }
+
+        #getTheAppAppleStoreIcon {
+            height: 10vw;
+            width: auto;
+        }
+
+
+
+        .threeBoxPromoDivImage {
+            height: 10vw;
+            width: auto;
+
+        }
+
+        #homePageMobileAppButton {
+            background-image: linear-gradient(to right, #5f8de7, #47a0ee, #3cb0ef, #48bfed, #61cde9);
+            color: white;
+            border-radius: 10%;
+        }
+
+        .carousel-indicators li {
+            background: #5eacf0;
+            width: 3.5vw;
+            height: 1.5vw;
+            border-radius: 150px / 90px;
+            margin-bottom: 1vw;
+        }
+
+        .carousel-indicators .active {
+            background: #5f8de7;
+            width: 4vw;
+            height: 1.5vw;
+            border-radius: 150px / 90px;
+            margin-bottom: 1vw;
+        }
+
+        .carouselImage {
+            height: 75vw;
+            width: auto;
+        }
+
+        .homePageDescHeader {
+            margin-top: 2vw;
+            font-size: 3vw;
+        }
+
+        .headerTextDeliverySteps {
+            font-size: 3vw;
+        }
+
+        #sampleImageShot {
+            height: 25vw;
+            width: auto;
+        }
+
+        .headerText {
+            font-size: 24px;
+            font-family: 'Poppins', sans-serif;
+            color: #47a0ee;
+
+        }
+
+        .headerTextTwo {
+            color: #5f8de7;
+            font-size: 24px;
+            font-family: 'Poppins', sans-serif;
+
+        }
+
+        .headerText2 {
+            color: black;
+            font-size: 24px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .subHeaderText {
+            font-size: 18px;
+            font-family: 'Arimo', sans-serif;
+            color: rgba(26, 26, 26, 0.578);
+
+        }
+
+        .subSubHeaderText {
+            font-size: 16px;
+            font-family: 'Poppins', sans-serif;
+            color: #47a0ee;
+        }
+
+        .subSubHeaderText2 {
+            font-size: 16px;
+            font-family: 'Poppins', sans-serif;
+            color: black;
+        }
+
+        .subSubHeaderTextTwo {
+            font-size: 16px;
+            font-family: 'Poppins', sans-serif;
+            color: #5f8de7;
+        }
+
+        #boxOnePicOne {
+            background-image: url("/images/iphone-x-mockup-being-used-by-a-girl-while-in-the-street-a17308.png");
+            height: 78vw;
+            width: 100%;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            padding: 0px !important;
+            display: block;
+            margin: 0px !important;
+            overflow: hidden;
+        }
+
+        .bannerModernCourier {
+            font-size: 3vw;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+
+        }
+
+        .divBannerModernCourier {
+            background-image: linear-gradient(to right, #5f8ce7a8, #47a0eead, #3cb0efaf, #48beedb8, #61cee9af);
+            padding-top: 3%;
+            /* margin-top: 2vw; */
+            margin-bottom: 7vw;
+        }
+
+        a:hover {
+            text-decoration-color: #5f8de7 !important;
+        }
+
+        #getTheAppIconApple {
+            height: 5vw;
+            width: auto;
+        }
+
+        .subHeaderTextBanner {
+            font-size: 2vw;
+            color: white;
+            font-family: 'Arimo', sans-serif;
+        }
+
+        #smallUnderlineSpan {
+            border-bottom: solid 1px white;
+            width: 15vw;
+        }
+
+        .dot {
+            height: 4vw;
+            width: 4vw;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            background: #5f8de7;
+        }
+
+
+
+        /* Mobile Styles */
+
+        @media only screen and (max-width: 400px) {
+            #homePagePromoBackground {
+                background-image: url("/images/background2x 2.png");
+                background-color: rgb(255, 255, 255);
+                height: 80vw;
+                width: 100%;
+                /* background-position: center center; */
+                background-repeat: no-repeat;
+                background-size: contain;
+                padding: 0px !important;
+                display: block;
+                margin: 0px !important;
+                overflow: hidden;
+            }
+            .homePagePromoUserPicOne {
+                height: 66vw;
+                width: 100%;
+            }
+            .homePagePromoUserPicTwo {
+                height: 66vw;
+                width: 100%;
+            }
+            .threeBoxPromoDivText {
+                padding: 5%;
+            }
+            .divBannerModernCourier {
+                margin-bottom: 1px;
+                width: auto;
+            }
+            .col-xs-12 .col-sm-6 .threeBoxPromoDivText {
+                margin-right: 0px;
+            }
+            .subHeaderText {
+                /* margin-right: 10%; */
+            }
+            .homeDoubleBoxImage {
+                height: 15vw;
+                width: auto;
+                margin-bottom: 1vw;
+            }
+
+            #carPictureSlideID {
+                height: 80vw;
+                width: auto;
+            }
+        }
+
+        /* Tablet Styles */
+
+        @media only screen and (min-width: 401px) and (max-width: 961px) {
+            .threeBoxPromoDivText {
+                padding: 5%;
+            }
+            .divBannerModernCourier {
+                margin-bottom: 1px;
+
+            }
+            .homeDoubleBoxImage {
+                height: 8vw;
+                width: auto;
+                margin-bottom: 1vw;
+            }
+            #carPictureSlideID {
+                height: 75vw;
+                width: auto;
+            }
+
+        }
+
+        /* Desktop Styles */
+
+        @media only screen and (min-width: 766px) {
+            .threeBoxPromoRow {
+                justify-content: center;
+                align-items: center;
+                display: flex;
+            }
+            .homePagePromoUserPicTwo {
+                clip-path: polygon(50% 0, 100% 0, 100% 100%, 0 100%);
+
+            }
+
+            .col-sm-push-6 {
+                left: 57%;
+            }
+
+            #promoDivTextTwo {
+                margin-left: 10%;
+            }
+
+            .homePagePromoUserPicOne {
+                clip-path: polygon(0 0, 50% 0, 100% 100%, 0 100%);
+            }
+            .threeBoxPromoDivText {
+                padding: 3%;
+            }
+            .divBannerModernCourier {
+                margin-bottom: 1px;
+
+            }
+            .homeDoubleBoxImage {
+                height: 5vw;
+                width: auto;
+                margin-bottom: 1vw;
+            }
+            #carPictureSlideID {
+                height: 50vw;
+                width: auto;
+            }
+
+        }
+    </style>
+
+    </head>
+
+    <body>
+
+        <!-- Include the Partial for the preloader  -->
+        <%- include('partials/preloader') -%>
+            <!-- Include the Partial for the topbar (Home Topbar) -->
+            <%- include('partials/topBar') -%>
+
+                <div class="" id="homePagePromoBackground">
+
+                </div>
+
+
+
+
+                <div class="container-fluid">
+                    <div class="row  divBannerModernCourier">
+                        <div class=" col-xs-12">
+                            <center>
+                                <a href="/mobileapp">
+                                    <p class="bannerModernCourier">The easiest way to send and receive packages locally
+                                        <span>
+                                            <img src="/images/next_white.png" style="height: 3vw; width: auto;">
+                                        </span>
+                                    </p>
+                                </a>
+                                <p id="smallUnderlineSpan"></p>
+
+                                <span>
+                                    <a target="_blank" href="https://apps.apple.com/us/app/posta-delivery-service/id1441905556">
+                                        <img id="getTheAppIconApple" src="/images/whitepostaparachute.png">
+                                    </a>
+                                </span>
+                                </p>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <div>
+                    <div class="row threeBoxPromoRow">
+
+                        <div class="col-xs-12 col-sm-6" id="">
+                            <img class="img-responsive homePagePromoUserPicOne" src="/images/over-the-shoulder-iphone-xs-mockup-of-a-girl-sitting-on-a-minimalist-chair-25440.png">
+
+                        </div>
+                        <div class="col-xs-12 col-sm-6 threeBoxPromoDivText">
+                            <p class="headerText">Immediate Delivery</p>
+                            <p class="subHeaderText">Get access to an on-demand network of couriers ready to deliver your package when you request
+                                on the Posta Mobile App.
+                            </p>
+                            <a target="_blank" href="https://apps.apple.com/us/app/posta-delivery-service/id1441905556">
+                                <p Class="subSubHeaderText">Get Started Now
+                                    <span>
+                                        <img src="/images/next.png" style="height: 16px; width: auto;">
+                                    </span>
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="row threeBoxPromoRow">
+                        <div class="col-xs-12 col-sm-push-6" id="">
+                            <img class="img-responsive homePagePromoUserPicTwo" src="/images/mockup-of-a-girl-with-crossed-legs-holding-an-iphone-xs-25366 (3).png">
+
+                        </div>
+                        <div class="col-xs-12 col-sm-pull-6 threeBoxPromoDivText" id="promoDivTextTwo" style="padding: 5%;">
+
+                            <p class="headerTextTwo">Real-Time Tracking</p>
+                            <p class="subHeaderText">End to end tracking of your courier for the sender and recipient, from pickup to delivery.</p>
+                            <a target="_blank" href="https://apps.apple.com/us/app/posta-delivery-service/id1441905556">
+                                <p Class="subSubHeaderTextTwo">Posta It
+                                    <span>
+                                        <img src="/images/next (1).png" style="height: 16px; width: auto;">
+                                    </span>
+                                </p>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="row threeBoxPromoRow">
+                        <div class="col-xs-12 col-sm-6" id="">
+                            <img class="img-responsive homePagePromoUserPicOne" src="/images/mockup-of-an-iphone-xs-held-by-a-man-outside-25532 (1).png">
+
+                        </div>
+                        <div class="col-xs-12 col-sm-6 threeBoxPromoDivText">
+                            <p class="headerText">Delivery Confirmation</p>
+                            <p class="subHeaderText">SMS text delivery codes to ensure your package or item gets delivered to the intended recipient.
+                            </p>
+                            <a target="_blank" href="https://apps.apple.com/us/app/posta-delivery-service/id1441905556">
+                                <p Class="subSubHeaderText">Start Sending Today
+                                    <span>
+                                        <img src="/images/next.png" style="height: 16px; width: auto;">
+                                    </span>
+                                </p>
+                                <!-- <button class="btn btn-xs btn-rounded" id="homePageMobileAppButton">See More: Mobile App</button> -->
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="row">
+                            <center>
+                                <img style="border-bottom: 1px solid black;" id="carPictureSlideID" src="/images/ss4-2x.png">
+                            </center>
+                        </div>
+
+                        <div class="row " style="margin-top:2vw;">
+                            <center>
+                                <span class="dot" id="dot1"></span>
+                                <span class="dot" id="dot2"></span>
+                                <span class="dot" id="dot3"></span>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <br>
+                <br>
+
+                <div class="container-fluid ">
+                    <div class="row" style="background: rgb(244, 244, 244); padding-top: 3vw; padding-bottom: 3vw;">
+                        <div class="col-xs-12 col-sm-2 ">
+
+                        </div>
+                        <div class="col-xs-12 col-sm-4 ">
+                            <img src="/images/homeDeliveryConfirmedIcon.png " class="homeDoubleBoxImage ">
+
+                            <p class="headerText2 ">Posta For Business</p>
+                            <p class="subHeaderText "> The Posta platform is perfect for on-demand deliveries to your local customers. Send it easily
+                                and securely with Posta.
+                            </p>
+                            <a target="_ " href="/posta-business-solutions">
+                                <p Class="subSubHeaderText2 ">Learn More
+                                    <span>
+                                        <img src="/images/next.png " style="height: 16px; width: auto; ">
+                                    </span>
+                                </p>
+                            </a>
+
+                        </div>
+                        <div class="col-xs-12 col-sm-4 ">
+                            <img src="/images/delivery-truck.png " class="homeDoubleBoxImage ">
+
+                            <p class="headerText2 ">Join Posta </p>
+                            <p class="subHeaderText ">The Posta platform is a great way to earn money as partner courier. Short distances, small packages,
+                                and whenever you want.
+                            </p>
+                            <a target="_ " href="/views/postaPartnersHome.ejs ">
+                                <p Class="subSubHeaderText2 ">Become a Posta Partner
+                                    <span>
+                                        <img src="/images/next.png " style="height: 16px; width: auto; ">
+                                    </span>
+                                </p>
+                            </a>
+
+                        </div>
+                        <div class="col-xs-12 col-sm-2">
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <!-- {Partial for the bottomBarHome} -->
+                <%- include('partials/bottomBarHome') -%>
+
+                    <%- include('partials/bottom') -%>
+                        <!-- ALL IN: views/partials/bottom.ejs -> <script> JS File in Public </script>, </body>, and </html> -->
